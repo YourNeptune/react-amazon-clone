@@ -1,5 +1,5 @@
 .header {
-  background-color: black;
+  background-color: #131921;
   height: 60px;
   display: flex;
   align-items: center;
@@ -7,9 +7,9 @@
   top: 0;
 }
 
-.header__logo{
-    height: 40px;
-    object-fit: contain;
-    margin: 1em;
-    margin-top: 1.5em;
+.header__logo {
+  height: 40px;
+  object-fit: contain;
+  margin: 1em;
+  margin-top: 1.5em;
 }
