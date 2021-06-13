@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import "../css/Header.css";
+import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 
 const Header = () => {
   return (
@@ -16,22 +17,34 @@ const Header = () => {
 
       <div className="header__search">
         <input className="header__searchInput" type="text" />
-        <SearchIcon className='header__searchIcon'/>
+        <SearchIcon className="header__searchIcon" />
       </div>
 
       <div className="header__nav">
-        <div className="header__option">
-          <span>Hello, Guest</span>
-          <span>Sign In</span>
-        </div>
-        <div className="header__option">
-          <span>Returns</span>
-          <span>& Orders</span>
-        </div>
-        <div className="header__option">
-          <span>Your</span>
-          <span>Prime</span>
-        </div>
+        <Link to="/login" className="header__link">
+          <div className="header__option">
+            <span className="header__optionLineOne">Hello, Guest</span>
+            <span className="header__optionLineTwo">Sign In</span>
+          </div>
+        </Link>
+        <Link to="/" className="header__link">
+          <div className="header__option">
+            <span className="header__optionLineOne">Returns</span>
+            <span className="header__optionLineTwo">& Orders</span>
+          </div>
+        </Link>
+        <Link to="/" className="header__link">
+          <div className="header__option">
+            <span className="header__optionLineOne">Your</span>
+            <span className="header__optionLineTwo">Prime</span>
+          </div>
+        </Link>
+
+        <Link to="/checkout">
+          <div className="header__optionShoppingCart">
+            <ShoppingCartOutlinedIcon />
+          </div>
+        </Link>
       </div>
     </div>
   );
