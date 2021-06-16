@@ -42,7 +42,7 @@ const Header = () => {
 
         <Link to="/checkout">
           <div className="header__optionShoppingCart">
-            <ShoppingCartOutlinedIcon  />
+            <ShoppingCartOutlinedIcon  fontSize='large'/>
             <span>0</span>
           </div>
         </Link>
