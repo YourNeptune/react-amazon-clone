@@ -6,7 +6,7 @@ const Home = () => {
       <img
         className="home__image"
         alt="banner-img"
-        src="https://images-na.ssl-images-amazon.com/images/G/15/digital/video/merch/Other/BRND_MTH21_GWBleedingHero_1500x600_Final_en-CA_PVD7025._CB668765331_.jpg"
+        src="https://images-na.ssl-images-amazon.com/images/G/15/kindle/journeys/YzllYTYxOGQt/YzllYTYxOGQt-M2I2ZTU1ZGQt-w3000._CB663476491_.jpg"
       />
     </div>
   );
