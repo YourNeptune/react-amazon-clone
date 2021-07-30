@@ -13,6 +13,14 @@ const Product = ({ id, title, image, price, rating }) => {
         <strong>{price}</strong>
       </div>
 
+      <div className="product__rating">
+        {Array(rating)
+          .fill()
+          .map(() => {
+            return <span>⭐</span>;
+          })}
+      </div>
+
       <div className="product__image">
         <img src={image} alt="productImg" />
       </div>
